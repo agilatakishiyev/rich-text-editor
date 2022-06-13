@@ -1,0 +1,96 @@
+.App {
+  height: 100vh;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.editor-area {
+  width: 60%;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  border-bottom: 2px solid black;
+  padding: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.button-groups {
+  display: flex;
+}
+
+.style-button {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px;
+  border-radius: 2px;
+  color: hsla(214, 43%, 19%, 0.6);
+}
+
+.style-button:not(:last-child) {
+  margin-right: 2px;
+}
+
+.style-button.selected {
+  background-color: hsla(214, 100%, 60%, 0.13);
+  color: hsl(214, 100%, 43%);
+}
+
+.style-button:not(.selected):hover {
+  background-color: hsla(214, 61%, 25%, 0.05);
+  color: hsla(214, 41%, 17%, 0.83);
+}
+
+.editor {
+  padding: 16px;
+  height: 100%;
+  outline: none;
+}
