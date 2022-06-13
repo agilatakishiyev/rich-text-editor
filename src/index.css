@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.RichEditor-editor {
+  padding: 12px;
+}
+
+.RichEditor-controls {
+  border-bottom: 2px solid black;
+  padding: 8px;
+  display: flex;
+  gap: 20px;
+}
+
+.RichEditor-styleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  padding: 4px;
+  border-radius: 2px;
+  color: hsla(214, 43%, 19%, 0.6);
+}
+
+.RichEditor-styleButton:not(:last-child) {
+  margin-right: 2px;
+}
+
+.RichEditor-activeButton {
+  background-color: hsla(214, 100%, 60%, 0.13);
+  color: hsl(214, 100%, 43%);
+}
+
+.RichEditor-styleButton:not(.RichEditor-activeButton):hover {
+  background-color: hsla(214, 61%, 25%, 0.05);
+  color: hsla(214, 41%, 17%, 0.83);
 }
