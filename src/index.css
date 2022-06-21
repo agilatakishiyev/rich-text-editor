@@ -51,6 +51,10 @@ code {
   color: hsla(214, 43%, 19%, 0.6);
 }
 
+.RichEditor-styleButton:hover {
+  cursor: pointer;
+}
+
 .RichEditor-styleButton:not(:last-child) {
   margin-right: 2px;
 }
